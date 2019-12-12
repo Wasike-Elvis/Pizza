@@ -57,6 +57,9 @@ em{
     letter-spacing: 2px;
 
 }
+.about{
+    font-size: 18px;
+}
 .Contacts{
     background: url("../Images/pizza5.jpeg") center center/cover no-repeat;
     text-align: center;
@@ -78,4 +81,5 @@ textarea {
 }
 ::placeholder {
     color: rgb(233, 7, 75);
+    font-weight: bold;
 }
