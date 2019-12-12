@@ -1,59 +1,69 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-h1{
+
+h1 {
     color: #dfd5d7;
 }
-body { 
-    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)); 
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
     background-size: cover;
     overflow: auto;
     height: 1100px;
     position: relative;
     font-size: 16px;
     font-family: fantasy;
-    color:#7dc410;
-    
+    color: #7dc410;
+
 }
 
-.nav li,a{
+.nav li,
+a {
     font-weight: 500;
     font-size: 16px;
     color: #edf0f1;
     text-decoration: none;
 
 }
-header{
+
+header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 10px 5%;
 }
-nav{
+
+nav {
     text-transform: uppercase;
 }
-.logo{
+
+.logo {
     cursor: pointer;
     margin-right: auto;
     height: 70px;
     width: 70px;
     border-radius: 50%;
 }
-.links{
+
+.links {
     list-style: none;
 }
-.links li{
+
+.links li {
     display: inline-block;
     padding: 0px 20px;
 }
-.links li a{
+
+.links li a {
     transition: all 0.3s ease 0s;
     position: relative;
     padding: 5px 0px;
 }
-nav ul li a:before{
+
+nav ul li a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -65,11 +75,13 @@ nav ul li a:before{
     transform-origin: right;
     transition: transform .5s;
 }
-nav ul li a:hover:before{
+
+nav ul li a:hover:before {
     transform: scaleX(1);
     transform-origin: left;
 }
-nav ul li a:after{
+
+nav ul li a:after {
     content: "";
     position: absolute;
     width: 100%;
@@ -81,34 +93,42 @@ nav ul li a:after{
     transform-origin: left;
     transition: transform .5s;
 }
-nav ul li a:hover:after{
+
+nav ul li a:hover:after {
     transform: scaleX(1);
     transform-origin: right;
 }
-.photos img{
+
+.photos img {
     height: 250px;
     width: 250px;
     padding: 20px;
 }
-.intro{
+
+.intro {
     margin: 20px;
     text-align: center;
 }
-.intro h1{
+
+.intro h1 {
     color: #f7325e;
 }
-.list{
+
+.list {
     margin-left: 30px;
 }
-.list ul{
+
+.list ul {
     display: inline-block;
     position: relative;
-    margin-left:60px;
+    margin-left: 60px;
 }
-.popular{
+
+.popular {
     color: #00FFFF;
 }
-.Footer{
+
+.Footer {
     text-align: center;
     font-size: 18px;
     font-weight: bolder;
@@ -117,11 +137,13 @@ nav ul li a:hover:after{
     height: 45px;
     padding-top: 10px;
 }
-h4{
+
+h4 {
     font-size: 25px;
-    color:black;
+    color: black;
     font-weight: bolder;
 }
-span{
+
+span {
     color: white;
 }

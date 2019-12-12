@@ -1,24 +1,29 @@
 body {
     overflow-x: hidden;
 }
-h6{
-    padding-top:400px;
+
+h6 {
+    padding-top: 400px;
     text-align: center;
-    color:white;
+    color: white;
     font-size: 40px;
     font-weight: bolder;
-    
+
 }
-.HomeSlide{
+
+.HomeSlide {
     background: url("../Images/pizza7.webp") center center/cover no-repeat;
     height: 150vh;
 }
-em{
+
+em {
     font-size: 23px;
 }
+
 #pizzaSizes {
     width: 100%;
 }
+
 .card {
     margin: 10px 0;
     position: relative;
@@ -35,10 +40,9 @@ em{
     cursor: pointer;
     min-height: 100%;
     transition: all 0.5s ease;
-    ;
     background: rgba(0, 0, 0, 0.582);
     width: 100%;
-    opacity:0;
+    opacity: 0;
 }
 
 .ptag {
@@ -57,16 +61,19 @@ em{
     letter-spacing: 2px;
 
 }
-.about{
+
+.about {
     font-size: 18px;
 }
-.Contacts{
+
+.Contacts {
     background: url("../Images/pizza5.jpeg") center center/cover no-repeat;
     text-align: center;
     color: rgb(38, 206, 16);
     height: 100vh;
     padding-top: 50px;
 }
+
 input {
     width: 400px;
     background: transparent;
@@ -79,6 +86,7 @@ textarea {
     background: transparent;
     color: rgb(12, 12, 12);
 }
+
 ::placeholder {
     color: rgb(233, 7, 75);
     font-weight: bold;
