@@ -7,7 +7,7 @@ h1{
     color: #f7325e;
 }
 body { 
-    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../images/pic4.jpeg) no-repeat center center fixed; 
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)); 
     background-size: cover;
     overflow: auto;
     height: 1100px;
@@ -23,6 +23,7 @@ body {
     font-size: 16px;
     color: #edf0f1;
     text-decoration: none;
+
 }
 header{
     display: flex;
