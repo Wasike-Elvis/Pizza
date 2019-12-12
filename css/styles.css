@@ -1,15 +1,59 @@
+body {
+    overflow-x: hidden;
+}
 h6{
     padding-top:400px;
     text-align: center;
     color:white;
     font-size: 40px;
+    font-weight: bolder;
     
 }
 .HomeSlide{
     background: url("../Images/pizza7.webp") center center/cover no-repeat;
     height: 150vh;
-   
 }
 em{
     font-size: 23px;
+}
+#pizzaSizes {
+    width: 100%;
+}
+.card {
+    margin: 10px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover img {
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+.card-1 {
+    position: absolute;
+    cursor: pointer;
+    min-height: 100%;
+    transition: all 0.5s ease;
+    ;
+    background: rgba(0, 0, 0, 0.582);
+    width: 100%;
+    opacity:0;
+}
+
+.ptag {
+    padding: 5% 0;
+    background-color: #0000004d;
+    padding: 50px 10px;
+    font-weight: 100%;
+    font-family: 'Merienda', cursive;
+    line-height: 90%;
+    margin: 20% 5%;
+    padding-top: 30px;
+    border: 4px solid whitesmoke;
+    font-size: 1.1em;
+    color: white;
+    overflow: hidden;
+    letter-spacing: 2px;
+
 }
