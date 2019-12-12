@@ -108,5 +108,13 @@ nav ul li a:hover:after{
 .popular{
     color: #00FFFF;
 }
-
+.Footer{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    color: black;
+    background: white;
+    height: 45px;
+    padding-top: 10px;
+}
 
