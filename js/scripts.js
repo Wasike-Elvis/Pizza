@@ -10,6 +10,6 @@ $(document).ready(function () {
             var name = document.getElementById("mce-NAME").value;
             alert("Hey " + name + ". We have received your details thank you for reaching us!");
         });
-})
+      
 
 
