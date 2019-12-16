@@ -14,6 +14,10 @@ H3{
     text-align: center;
     font-weight: bold;
 }
+H2{
+    text-align: center;
+    font-weight: bold;
+}
 .HomeSlide {
     background: url("../Images/pizza7.webp") center center/cover no-repeat;
     height: 150vh;
