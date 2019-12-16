@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/Nav.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -113,132 +115,57 @@
     </div><br><br>
 
 
-    <div class="container">
-    <div class="order-information-input initially-hidden">
-        <h3>Enter your information.</h3>
-        <form>
-          <div class="form-group">
-            <label for="customer-name">Name: </label>
-            <input id="customer-name" type="text" placeholder="John Doe">
-          </div>
-          <div class="form-group">
-            <label for="customer-street">Address: </label>
-            <input id="customer-street" type="text" placeholder="123 Main Street">
-          </div>
-          <div class="form-group">
-            <label for="customer-city">City: </label>
-            <input id="customer-city" type="text" placeholder="Portland">
-          </div>
-          <div class="form-group">
-            <label for="customer-zip-code">Zip Code: </label>
-            <input id="customer-zip-code" type="text" placeholder="97214">
-          </div>
-          <div class="form-group">
-            <label for="customer-phone">Phone Number: </label>
-            <input id="customer-phone" type="text" placeholder="555-555-5555">
-          </div>
-          <div class="form-group">
-            <label class="checkbox-inline"><input type="radio" name="cash-credit" value="cash" checked>Cash</label>
-            <label class="checkbox-inline"><input type="radio" name="cash-credit" value="credit">Credit</label>
-          </div>
-          <button type="submit" class="btn btn-success">Submit</button>
-        </form>
+    
+    <div class="jumbotron">
+        <h2>Thin Crust or Bust!</h2>
       </div>
-      <div class="order-pizza-input initially-hidden">
-        <h3>Add a pizza to your order.</h3>
-        <form>
-          <div class="size form-group">
-            <h4>Pie Size:</h4>
-            <label class="checkbox-inline"><input type="radio" name="pie-size" value="small"> Small ($7)</label>
-            <label class="checkbox-inline"><input type="radio" name="pie-size" value="medium" checked> Medium ($9)</label>
-            <label class="checkbox-inline"><input type="radio" name="pie-size" value="large"> Large ($11)</label>
-            <label class="checkbox-inline"><input type="radio" name="pie-size" value="extra large"> Extra Large
-              ($13)</label>
-          </div>
-          <div class="meat-toppings  form-group">
-            <h4>Meats: ($1.25 each) </h4>
-            <label class="checkbox-inline">
-              <input type="checkbox" name="meat-toppings" value="Pepperoni">Pepperoni
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" name="meat-toppings" value="Sausage">Sausage
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" name="meat-toppings" value="Ham">Ham
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" name="meat-toppings" value="Meatball">Meatball
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" name="meat-toppings" value="Hamburger">Hamburger
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" name="meat-toppings" value="Bacon">Bacon
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" name="meat-toppings" value="Grilled Chicken">Grilled Chicken
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" name="meat-toppings" value="Meat Surprise">Meat Surprise
-            </label>
-          </div>
-          <div class="veg-toppings  form-group">
-            <h4>Veggies: ($0.75 each) </h4>
-            <label class="checkbox-inline">
-              <input type="checkbox" name="veg-toppings" value="Olives">Olives
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" name="veg-toppings" value="Tomatoes">Tomatoes
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" name="veg-toppings" value="Onions">Onions
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" name="veg-toppings" value="Green Peppers">Green Peppers
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" name="veg-toppings" value="Mushrooms">Mushrooms
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" name="veg-toppings" value="Basil">Basil
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" name="veg-toppings" value="Spinach">Spinach
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" name="veg-toppings" value="Banana Peppers">Banana Peppers
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" name="veg-toppings" value="Pineapple">Pineapple
-            </label>
-          </div>
-          <div class="cheese  form-group">
-            <h4>Cheese:</h4>
-            <label class="checkbox"><input type="radio" name="cheese-options" value="regular" checked> Regular</label>
-            <label class="checkbox"><input type="radio" name="cheese-options" value="extra"> Extra Cheese <em>(add
-                $1)</em></label>
-            <label class="checkbox"><input type="radio" name="cheese-options" value="none"> No Cheese</label>
-          </div>
-          <button type="submit" class="btn btn-success">Add Pizza</button>
-        </form>
-      </div>
-      <div class="order-summary initially-hidden">
-        <h3>Your order.</h3>
-        <p>Click on a pizza to view and hide more information.</p>
-        <div class="pizza-list"></div>
-        <h3>Total Cost: <span id="pizza-list-total-cost"></span></h3>
-        <button id="add-another-pizza" class="btn btn-success">Add another Pizza</button>
-        <button id="checkout-order" class="btn btn-success">Checkout Out</button>
-      </div>
-      <div class="checked-out  initially-hidden">
-        <h3>Your order is on its way!</h3>
-        <p>Click below to place a new order.</p>
-        <button type="button" class="btn btn-success" id="new-order">New Order</button>
+      <main class="container">
+        <h3>What are you waiting for?</h3>
+        <h3>Order Below!</h3><br>
+        <form class="order-form">
+          <div id="customer-name" class="form-group">
+            <h5> Name : </h5>
+            <input id="customer-name-input" type="text">
+          </div><br>
+          <div id="new-pizzas-section">
+            <div class="new-pizza">
+              <div class="form-group">
+                <h5> Choose Your Size : </h5>
+                <select class="pizza-size-input">
+                  <option value = "small">Small</option>
+                  <option value = "medium">Medium</option>
+                  <option value = "large">Large</option>
+                </select>
+              </div><br>
+              <div class="pizza-toppings" class="form-group">
+                <h5>Choose Your Toppings  (All pies include tomato sauce and mozzerella cheese for no extra cost) : </h5>
+                <input type="checkbox" name="topping" value="bell-peppers">  Bell Peppers<br>
+                <input type="checkbox" name="topping" value="mushrooms">  Mushrooms<br>
+                <input type="checkbox" name="topping" value="spinach">  Spinach<br>
+                <input type="checkbox" name="topping" value="artichokes">  Artichokes<br>
+                <input type="checkbox" name="topping" value="chicken">  Chicken<br>
+                <input type="checkbox" name="topping" value="pepperoni">  Pepperoni<br>
+                <input type="checkbox" name="topping" value="sausage">  Sausage<br>
+                <input type="checkbox" name="topping" value="pesto">  Pesto<br>
+                <input type="checkbox" name="topping" value="bbq-sauce">  BBQ Sauce<br>
+                <input type="checkbox" name="topping" value="feta-cheese">  Feta Cheese<br>
+              </div><hr>
+            </div><!--new-pizza close-->
+            <div class="additional-pizzas">
   
-        <buton class="btn btn-default" id="console-log">Log Object to Console</buton>
-      </div>
-    </div>
-
+            </div> <!--additional-pizzas close-->
+          </div> <!--new-pizzas-section close-->
+          <div class="buttons">
+            <span id="add-pizza-button" class="btn btn-default">Add Another Pizza</span><br><br>
+            <button id="pizza-form-submit" type="submit" class="btn btn-default form-submit">Place Order</button>
+          </div>
+        </form><br><br>
+        <div class="output">
+          <h3>Order Confirmation:</h3>
+          <h4><span class="output-name"></span> your order will be ready soon!</h4>
+          <p><span class="output-order"></span></p>
+          <p>Your order total is <span class="output-order-total"></span> KSH!!</p>
+        </div>
 
 
 
